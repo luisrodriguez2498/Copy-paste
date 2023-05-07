@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copy paste information</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function copyToClipboard(elementId) {
+      const element = document.getElementById(elementId);
+      if (!element) {
+        console.error(`No se encontró ningún elemento con el id ${elementId}`);
+        return;
+      }
+      const textToCopy = element.value;
+      navigator.clipboard.writeText(textToCopy).then(
+        function () {
+          console.log("Texto copiado correctamente.");
+        },
+        function () {
+          console.error("No se pudo copiar el texto.");
+        }
+      );
+    }
+
+    function copyToClipboardP(elementId) {
+      const element = document.getElementById(elementId);
+      if (!element) {
+        console.error(`No se encontró ningún elemento con el id ${elementId}`);
+        return;
+      }
+      const textToCopy = element.innerText;
+      navigator.clipboard.writeText(textToCopy).then(
+        function () {
+          console.log("Texto copiado correctamente.");
+        },
+        function () {
+          console.error("No se pudo copiar el texto.");
+        }
+      );
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <h3>Noas 1</h3>
+  <div class="container">
+    <textarea id="notas-1" cols="30" rows="5"></textarea>
+    <button class="copy-button" onclick="copyToClipboard('notas-1')">Copiar texto</button>
+  </div>
+  <h3>Noas 2</h3>
+  <div class="container">
+    <textarea id="notas-2" cols="30" rows="5"></textarea>
+    <button class="copy-button" onclick="copyToClipboard('notas-2')">Copiar texto</button>
+  </div>
+  <h3>Notas 3</h3>
+  <div class="container">
+    <textarea id="notas-3" cols="30" rows="5"></textarea>
+    <button class="copy-button" onclick="copyToClipboard('notas-3')">Copiar texto</button>
+  </div>
+  <h3>Notas 4</h3>
+  <div class="container">
+    <textarea id="notas-4" cols="30" rows="5"></textarea>
+    <button class="copy-button" onclick="copyToClipboard('notas-4')">Copiar texto</button>
+  </div>
+
+
+
+</body>
+
+
+
+</html>

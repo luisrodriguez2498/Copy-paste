@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancel</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function copyToClipboard(elementId) {
+      const element = document.getElementById(elementId);
+      if (!element) {
+        console.error(`No se encontró ningún elemento con el id ${elementId}`);
+        return;
+      }
+      const textToCopy = element.value;
+      navigator.clipboard.writeText(textToCopy).then(
+        function () {
+          console.log("Texto copiado correctamente.");
+        },
+        function () {
+          console.error("No se pudo copiar el texto.");
+        }
+      );
+    }
+
+    function copyToClipboardP(elementId) {
+      const element = document.getElementById(elementId);
+      if (!element) {
+        console.error(`No se encontró ningún elemento con el id ${elementId}`);
+        return;
+      }
+      const textToCopy = element.innerText;
+      navigator.clipboard.writeText(textToCopy).then(
+        function () {
+          console.log("Texto copiado correctamente.");
+        },
+        function () {
+          console.error("No se pudo copiar el texto.");
+        }
+      );
+    }
+
+  </script>
+</head>
+
+<body>
+  <a href="main.html">Regresar</a>
+  <h3>Validation</h3>
+  <div class="container">
+    <p id="validation">I see you'd like to cancel, correct?</p>
+    <button class="copy-button" onclick="copyToClipboardP('validation')">
+      Copiar texto
+    </button>
+  </div>
+  <h3>Verify security</h3>
+  <div class="container">
+    <p id="security">May I have the phone number or email address on your account?</p>
+    <button class="copy-button" onclick="copyToClipboardP('security')">
+      Copiar texto
+    </button>
+  </div>
+  <h4>Failed security verification</h4>
+  <div class="container">
+    <p id="failed">Since we can't verify the account, we're unable to proceed. Please come back once you have the
+      correct information.</p>
+    <button class="copy-button" onclick="copyToClipboardP('failed')">Copiar texto</button>
+  </div>
+
+  <h3>Mini-recap</h3>
+  <div class="container">
+    <textarea id="mini-recap" cols="5"
+      rows="5">You would like to cancel your trip to &lt;&gt; on &lt;&gt;, correct? </textarea><button
+      class="copy-button" onclick="copyToClipboard('mini-recap')">
+      Copiar
+    </button>
+  </div>
+  <h3>Cap</h3>
+  <div class="container">
+    <p id="cap">Please keep this chat window open so we can stay connected.</p>
+    <button class="copy-button" onclick="copyToClipboardP('cap')">
+      Copiar texto
+    </button>
+
+  </div>
+
+  <h2>Discovery</h2>
+  <h3>Discovery</h3>
+  <div class="container">
+    <h4 id="with-reason1">Customer mentioned reason</h4>
+    <p>Let me help you with your cancellation.</p>
+
+    <button class="copy-button" onclick="copyToClipboardP('with-reason1')">
+      Copiar texto
+    </button>
+  </div>
+  <div class="container">
+    <h4>Customer did not mention reason</h4>
+    <ul>
+      <li>
+        <p id="why-cancelling">May I know why you're canceling your trip?</p>
+        <button class="copy-button-Izquierda" onclick="copyToClipboardP('why-cancelling')">Copiar texto</button>
+      </li>
+      <li>
+        <p id="all-passengers">Are we canceling for all passengers?</p>
+        <button class="copy-button" onclick="copyToClipboardP('all-passengers')">
+          Copiar texto
+        </button>
+      </li>
+    </ul>
+
+  </div>
+
+
+  <h2>Tailored solution</h2>
+  <h3>Policy review</h3>
+  <div class="container">
+    <p id="min-policy">Give me 3-5 min to review your cancellation policy.</p>
+    <button class="copy-button" onclick="copyToClipboardP('min-policy')">Copiar texto</button>
+  </div>
+
+  <h3>Policy overview</h3>
+  <div class="container">
+    <h4>Voidable</h4>
+    <textarea id="voidable" cols="30"
+      rows="10">Great news! If we cancel right now, you'll get a full refund of &lt;amount&gt;. Since for this type of ticket, the airline charges you directly, any charges from them should be refunded within 7 - 10 business days. Should I proceed?</textarea><button
+      class="copy-button" onclick="copyToClipboard('voidable')">
+      Copiar
+    </button>
+  </div>
+
+  <div class="container">
+    <h4>Refundable (without pen)</h4>
+    <textarea id="refundable-wn-penalty" cols="30"
+      rows="10">Good news! If you cancel right now, you'll get a refund of &lt;amount&gt; to your original payment method within &lt;refund timing&gt;. Should I cancel?</textarea><button
+      class="copy-button" onclick="copyToClipboard('refundable-wn-penalty')">
+      Copiar
+    </button>
+  </div>
+
+  <div class="container">
+    <h4>Refundable (with pen)</h4>
+    <textarea id="refundable-w-penalty" cols="30"
+      rows="10">According to &lt;airline&gt;, your ticket is refundable minus a fee of &lt;amount&gt; per passenger, you'll get a refund of &lt;amount&gt; to your original payment method within &lt;refund timing&gt;. Shall we proceed?</textarea><button
+      class="copy-button" onclick="copyToClipboard('refundable-w-penalty')">
+      Copiar
+    </button>
+  </div>
+
+  <div class="container">
+    <h4>FTC without penalty</h4>
+    <textarea name="" id="ftc-wn-penalty" cols="30"
+      rows="10">Good news! Your reservation allows us to cancel with an airline credit. You can use this credit &lt;validity&gt; a future flight with &lt;airline&gt; for same passengers and country of origin by &lt;travel date&gt;. Keep in mind there’s no change fee and rice difference will apply. Should I proceed?</textarea><button
+      class="copy-button" onclick="copyToClipboard('ftc-wn-penalty')">
+      Copiar
+    </button>
+  </div>
+  <div class="container">
+    <h4>FTC with penalty</h4>
+    <textarea name="" id="ftc-w-penalty" cols="30"
+      rows="10">Good news! Good news! Your reservation allows us to cancel with an airline credit. You can use this credit &lt;validity&gt; a future flight with &lt;airline&gt; with same passengers and country of origin by &lt;travel date&gt;. When you're ready to use your flight credit, &lt;airline&gt; will charge a &lt;amount&gt; change fee and any fare difference per ticket . Should I cancel?</textarea><button
+      class="copy-button" onclick="copyToClipboard('ftc-w-penalty')">
+      Copiar
+    </button>
+  </div>
+
+  <div class="container">
+    <h4>No refund/FTC</h4>
+    <textarea id="no-refund-no-ftc" cols="30"
+      rows="10">It looks like you booked one of our low priced fares. Those fares are priced very competitively, but also have more restrictions, such as non refundable and no credit allowed. Should I proceed?</textarea><button
+      class="copy-button" onclick="copyToClipboard('no-refund-no-ftc')">
+      Copiar
+    </button>
+  </div>
+
+  <h3>Insurance disclosure (If applicable)</h3>
+  <div class="container">
+    <h4>Voidable</h4>
+    <textarea id="insurance-voidable" cols="30"
+      rows="10">I can cancel your insurance , you will get a refund for Refund &lt;amount&gt;. It will take 7 - 10 business days to be back on your card.</textarea>
+    <button class="copy-button" onclick="copyToClipboard('insurance-voidable')">
+      Copiar
+    </button>
+  </div>
+  <div class="container">
+    <h4>Other scenarios</h4>
+    <textarea id="insurance-os" cols="30"
+      rows="10">You can submit a refund claim with &lt;insurance provider&gt; at &lt;phone number or link in HT 35599&gt;.</textarea>
+    <button class="copy-button" onclick="copyToClipboard('insurance-os')">
+      Copiar
+    </button>
+  </div>
+
+  <h3>Disclosures</h3>
+
+  <div class="container">
+    <textarea name="" id="disclosures" cols="30"
+      rows="10">Keep in mind, all cancellations are final, and once completed, it can’t be reversed, you will get an email confirmation to &lt;customer’s email&gt; with all details about the cancellation.</textarea>
+    <button class="copy-button" onclick="copyToClipboard('disclosures')">Copiar</button>
+  </div>
+
+  <h3>Possible objections</h3>
+  <div class="container">
+    <h4>Non-refundable - no FTC</h4>
+    <p id="objection-nr-nftc">
+      I understand your frustration. We always advocate for flexibility for our
+      travelers, but airlines often have strict rules and restrictions around their
+      bookings that we're bound to as well, which are shared at the booking time.
+    </p><button class="copy-button" onclick="copyToClipboardP('objection-nr-nftc')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>FTC</h4>
+    <p id="objection-ftc">
+      I'm sorry, I know this is frustrating. Since your ticket is non refundable,
+      the airline only allows for a future travel credit, great benefit is that you
+      can still use your ticket value towards another future trip.
+    </p><button class="copy-button" onclick="copyToClipboardP('objection-ftc')">Copiar texto</button>
+  </div>
+  <h3>Process (Customer agrees to cancel)</h3>
+  <div class="container">
+    <p id="agree-1">Great! Please give me a few minutes to complete this for you.</p><button class="copy-button"
+      onclick="copyToClipboardP('agree-1')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <p id="agree-2">
+      I have canceled your ticket(s) and sent the email confirmation, you will
+      receive it within 5 min.
+    </p><button class="copy-button" onclick="copyToClipboardP('agree-2')">Copiar texto</button>
+  </div>
+  <h3>Process (Customer declines to cancel)</h3>
+  <div class="container">
+    <h4>Voidable</h4>
+    <textarea name="" id="" cols="30"
+      rows="10">Sure, I will leave your reservation as it is. Please remember you have until &lt;date/time&gt; to cancel your flight with free cancellation benefit.</textarea>
+  </div>
+  <div class="container">
+    <h4>Other scenarios</h4>
+    <ul>
+      <li>
+        <p id="os-1">
+          Ok, let's leave your booking as it is. Please remember to cancel 3 hours/4
+          hours before flight departure.
+        </p><button class="copy-button-Izquierda" onclick="copyToClipboardP('os-1')">Copiar texto</button>
+      </li>
+      <li>
+        <p id="os-2">
+          Also remember you can do cancellations at anytime through our website or
+          mobile app.
+        </p><button class="copy-button" onclick="copyToClipboardP('os-2')">Copiar texto</button>
+      </li>
+    </ul>
+  </div>
+  <h2>Closing</h2>
+  <h3>Closing</h3>
+  <div class="container">
+    <p id="closing-1">
+      Is there something else I can do for you?
+    </p><button class="copy-button" onclick="copyToClipboardP('closing-1')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <p id="closing-2">
+      Can I help you with anything else?
+    </p><button class="copy-button" onclick="copyToClipboardP('closing-2')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <p id="closing-3">
+      Do you have any other question?
+    </p><button class="copy-button" onclick="copyToClipboardP('closing-3')">Copiar texto</button>
+  </div>
+</body>
+
+</html>

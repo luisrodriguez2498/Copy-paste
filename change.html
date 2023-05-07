@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>change</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function copyToClipboard(elementId) {
+      const element = document.getElementById(elementId);
+      if (!element) {
+        console.error(`No se encontró ningún elemento con el id ${elementId}`);
+        return;
+      }
+      const textToCopy = element.value;
+      navigator.clipboard.writeText(textToCopy).then(
+        function () {
+          console.log("Texto copiado correctamente.");
+        },
+        function () {
+          console.error("No se pudo copiar el texto.");
+        }
+      );
+    }
+
+    function copyToClipboardP(elementId) {
+      const element = document.getElementById(elementId);
+      if (!element) {
+        console.error(`No se encontró ningún elemento con el id ${elementId}`);
+        return;
+      }
+      const textToCopy = element.innerText;
+      navigator.clipboard.writeText(textToCopy).then(
+        function () {
+          console.log("Texto copiado correctamente.");
+        },
+        function () {
+          console.error("No se pudo copiar el texto.");
+        }
+      );
+    }
+
+  </script>
+</head>
+
+<body>
+  <a href="main.html">Regresar</a>
+  <h3>Validation</h3>
+  <div class="container">
+    <p id="validation">I see you’d like to change, correct?</p>
+    <button class="copy-button" onclick="copyToClipboardP('validation')">
+      Copiar texto
+    </button>
+  </div>
+  <h3>Verify security</h3>
+  <div class="container">
+    <p id="security">May I have the phone number or email address on your account?</p>
+    <button class="copy-button" onclick="copyToClipboardP('security')">
+      Copiar texto
+    </button>
+  </div>
+  <h4>Failed security verification</h4>
+  <div class="container">
+    <p id="failed">Since we can't verify the account, we're unable to proceed. Please come back once you have the
+      correct information.</p>
+    <button class="copy-button" onclick="copyToClipboardP('failed')">Copiar texto</button>
+  </div>
+
+  <h3>Mini-recap</h3>
+  <div class="container">
+    <textarea id="mini-recap" cols="5"
+      rows="5">This is for your trip to &lt;&gt; on &lt;&gt;, correct?</textarea><button class="copy-button"
+      onclick="copyToClipboard('mini-recap')">
+      Copiar
+    </button>
+  </div>
+  <h3>Cap</h3>
+  <div class="container">
+    <p id="cap">Please keep this chat window open so we can stay connected.</p>
+    <button class="copy-button" onclick="copyToClipboardP('cap')">
+      Copiar texto
+    </button>
+  </div>
+
+  <h2>Discovery</h2>
+  <h3>Discovery</h3>
+  <div class="container">
+    <textarea name="" id="Discovery1" cols="30" rows="7">May I have your trip preferences?
+• New departure and destination city
+• New dates & time
+• New flight numbers</textarea><button class="copy-button" onclick="copyToClipboard('Discovery1')">Copiar</button>
+  </div>
+  <div class="container">
+    <p id="all-passengers">
+      Is the change for all passengers?
+    </p><button class="copy-button" onclick="copyToClipboardP('all-passengers')">Copiar texto</button>
+  </div>
+  <h3>Availability</h3>
+  <div class="container">
+    <h4>Search</h4>
+    <p id="search">Give me a few minutes to check for flights.</p>
+    <button class="copy-button" onclick="copyToClipboardP('search')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>Present</h4>
+    <textarea name="" id="present" cols="30"
+      rows="5">The best option I found is &lt;copy + paste flight details&gt;</textarea>
+    <button class="copy-button" onclick="copyToClipboard('present')">Copiar texto</button>
+  </div>
+  <h3>Offer</h3>
+  <div class="container">
+    <h4>No pen/No fare diff</h4>
+    <textarea id="nopen-nofare" cols="30"
+      rows="5">For today’s exchange, there is no change fee or fare difference. Shall I finalize the changes?</textarea>
+    <button class="copy-button" onclick="copyToClipboard('nopen-nofare')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>No pen, with fare diff</h4>
+    <textarea id="nopen-withfare" cols="30"
+      rows="5">There is not change fee, so you'll only cover &lt;amount&gt; fare difference per passenger. You'll be charged a total of &lt;total exchange cost&gt; today. Should l finalize the changes?</textarea>
+    <button class="copy-button" onclick="copyToClipboard('nopen-withfare')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>With pen & no fare diff</h4>
+    <textarea id="withpen-nofare" cols="30"
+      rows="5">There’s a penalty fee of &lt;amount&gt; per passenger with no price difference, so you'll be charged a total of &lt;total exchange cost&gt; today. Should I continue?</textarea>
+    <button class="copy-button" onclick="copyToClipboard('withpen-nofare')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>With pen & fare diff</h4>
+    <textarea id="withpen-fare" cols="30"
+      rows="5">There’s a penalty fee of &lt;amount&gt; per passenger and &lt;amount&gt; fare difference per passenger, so you'll be charged a total of &lt;total exchange cost&gt; today. Shall I proceed?</textarea>
+    <button class="copy-button" onclick="copyToClipboard('withpen-fare')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>No pen/No fare diff + residual value - MCO</h4>
+    <textarea id="nopen-nofare-res-mco" cols="30"
+      rows="5">For today’s exchange, there is no change fee or fare difference. You'll also get &lt;amount&gt; as residual air credit per passenger. You need to &lt;validity&gt; a new flight by &lt;date&gt;. Should I proceed?</textarea>
+    <button class="copy-button" onclick="copyToClipboard('nopen-nofare-res-mco')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>With pen & fare diff + residual value - MCO</h4>
+    <textarea id="pen-fare-res-mco" cols="30"
+      rows="5">There’s a penalty fee of &lt;amount&gt; and &lt;amount&gt; fare difference per passenger, so you'll be charged a total of &lt;total exchange cost&gt; today. You'll also get &lt;amount&gt; residual air credit per passenger. You need to &lt;validity&gt; a new flight by &lt;date&gt;. Shall I finalize the changes?</textarea>
+    <button class="copy-button" onclick="copyToClipboard('pen-fare-res-mco')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>No pen/no fare diff + residual value - forteited</h4>
+    <textarea id="nopen-nofare-res-for" cols="30"
+      rows="5">For today’s exchange, there is no change fee or fare difference. Also, there’s a remaining amount of &lt;amount&gt;, this is consider a lost value since there’s no credit or refund for it. Should I proceed?</textarea>
+    <button class="copy-button" onclick="copyToClipboard('nopen-nofare-res-for')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>With pen & fare diff + residual value - Forteited</h4>
+    <textarea id="pen-fare-res-for" cols="30"
+      rows="5">There’s a penalty fee of <amount> and <amount> fare difference per passenger, so you'll be charged a total of <total exchange cost> today. Also, there’s a remaining amount of <amount>, this is consider a lost value since there’s no credit or refund for it. Shall I finalize the changes?</textarea>
+    <button class="copy-button" onclick="copyToClipboard('pen-fare-res-for')">Copiar texto</button>
+  </div>
+  <h3>Process</h3>
+  <div class="container">
+    <h4>Customer agrees to change</h4>
+    <p id="agrees">Great! Please give me a few minutes to complete this for you.</p>
+    <button class="copy-button" onclick="copyToClipboardP('agrees')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>Customer declines to change</h4>
+    <p id="declines">Ok, let's leave your booking as it is.</p>
+    <button class="copy-button" onclick="copyToClipboardP('declines')">Copiar texto</button>
+  </div>
+  <h3>Disclosure (Customer declines to change)</h3>
+  <div class="container">
+    <h4>Regular exchange</h4>
+    <p id="reg-exc">Please remember that prices and availability may change at any time. You can do changes up to 3
+      hours/4hours
+      before flight departure.</p>
+    <button class="copy-button" onclick="copyToClipboardP('reg-exc')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>FTC</h4>
+    <textarea id="ftc-1" cols="30"
+      rows="5">Please remember that prices and availability may change at any time. Remember to use your airline credit before &lt;ticket validity date&gt;.</textarea>
+    <button class="copy-button-Izquierda" onclick="copyToClipboard('ftc')">Copiar texto</button>
+    <p id="ftc-2">Keep in mind you can do changes online at anytime through our website or mobile app.</p>
+    <button class="copy-button" onclick="copyToClipboardP('ftc-2')">Copiar texto</button>
+  </div>
+  <h3>Disclosure (Customer agrees to change)</h3>
+  <div class="container">
+    <h4>New tickets/same COS</h4>
+    <textarea id="newticket-scos" cols="30"
+      rows="5">Your new ticket remains as non refundable/refundable, and changes are allowed subject to a possible fee. Baggage and seat fees are based on your original ticket policies.</textarea>
+    <button class="copy-button" onclick="copyToClipboard('newticket-scos')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>New tickets/different COS</h4>
+    <textarea id="newticket-dcos" cols="30"
+      rows="5">Your new ticket remains as non refundable/refundable, changes, baggage and seat fees are attached to &lt;airline&gt; policies.</textarea>
+    <button class="copy-button" onclick="copyToClipboard('newticket-dcos')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>Additional disclosure if residual value will also be issued</h4>
+    <textarea id="additional-disclosure" cols="30"
+      rows="5">The &lt;amount&gt; residual air credit per passenger is good for &lt;airline&gt; flights only for the same passenger. I'll email you the terms & conditions as well.</textarea>
+    <button class="copy-button" onclick="copyToClipboard('additional-disclosure')">Copiar texto</button>
+  </div>
+  <h3>changes completed</h3>
+  <div class="container">
+    <h4>Regular exchange</h4>
+    <textarea id="reg-exchange" cols="30"
+      rows="5">I’ve completed the changes and you’ll get an email confirmation to &lt;customer’s email&gt; within 20 min.</textarea>
+    <button class="copy-button" onclick="copyToClipboard('reg-exchange')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <h4>FTC</h4>
+    <textarea id="ftc-completed" cols="30"
+      rows="5">I’ve redeem you airline credit and you’ll get an email confirmation to <customer’s email> within 20 min. Itinerary number will remain the same, and your airline confirmation is &lt;airline code&gt;</textarea>
+    <button class="copy-button" onclick="copyToClipboard('ftc-completed')">Copiar texto</button>
+  </div>
+  <h3>Insurance disclosure (If applicable)</h3>
+  <div class="container">
+    <textarea id="ins-disclosure" cols="30"
+      rows="5">You can submit a refund claim with &lt;insurance provider&gt; at &lt;phone number or link in HT 35599&gt;.</textarea>
+    <button class="copy-button" onclick="copyToClipboard('ins-disclosure')">Copiar texto</button>
+  </div>
+
+  <h2>Closing</h2>
+  <h3>Closing</h3>
+  <div class="container">
+    <p id="closing-1">
+      Is there something else I can do for you?
+    </p><button class="copy-button" onclick="copyToClipboardP('closing-1')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <p id="closing-2">
+      Can I help you with anything else?
+    </p><button class="copy-button" onclick="copyToClipboardP('closing-2')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <p id="closing-3">
+      Do you have any other question?
+    </p><button class="copy-button" onclick="copyToClipboardP('closing-3')">Copiar texto</button>
+  </div>
+
+
+
+
+
+
+
+</body>

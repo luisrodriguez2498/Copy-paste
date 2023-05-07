@@ -1,0 +1,96 @@
+.container {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.box {
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+input[type="text"] {
+  width: 500px;
+  height: 100px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #369;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 5px #369;
+}
+
+textarea {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+textarea,
+input[type="text"] {
+  width: 90%;
+  height: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.copy-button-Izquierda {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  color: #333;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  transform: translateY(-100%);
+}
+
+.copy-button {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  color: #333;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: translateY(-100%);
+}
+
+.copy-button:hover {
+  background-color: #e6e6e6;
+}
+
+body {
+  background-color: cadetblue;
+}
