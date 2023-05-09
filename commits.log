@@ -1,0 +1,142 @@
+commit da05c8331c601e9c116ed0bebb5d08e666c9a37f
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Tue May 9 08:36:41 2023 -0600
+
+    siuuuuu
+
+commit 9f25edf51c5c13b61d23a82a1640a012ebbe9c74
+Merge: e21473b 81056c0
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Tue May 9 08:35:42 2023 -0600
+
+    Merge branch 'main' of https://github.com/luisrodriguez2498/Copy-paste-oficial-version
+
+commit e21473b8109c511a14ef636b26434f9779c0b409
+Merge: 2b95788 a0c4d64
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Tue May 9 08:33:12 2023 -0600
+
+    Despues del pull, haciendo una actualizacion al commit
+
+commit 81056c02dc8f913eab02e2bc5535d0e38330e8cb
+Merge: 2b95788 a0c4d64
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Tue May 9 08:33:12 2023 -0600
+
+    Merge branch 'main' of https://github.com/luisrodriguez2498/Copy-paste-oficial-version
+
+commit 2b95788ad20aadee64c3292661f68c01efa4c8ec
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Tue May 9 08:24:13 2023 -0600
+
+    Agregando estaciones del año con fecha de incio
+
+commit a0c4d64825afa0a251ee5729054ffdd0d350d65c
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Tue May 9 08:24:13 2023 -0600
+
+    Agregando las estaciones del año
+
+commit efedd2b2fc21bb164f9c7315aa4201031ba75be0
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Mon May 8 11:59:30 2023 -0600
+
+    ya esta!
+
+commit 1dc6b5b678e2ab0b409d0cebd2d854b85a5315df
+Merge: 2a0230c 39f9c59
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Mon May 8 11:58:01 2023 -0600
+
+    Resolviendo conflicto merge main html en el documento index.html
+
+commit 39f9c59b6110d837a74abc05e33e42a8f945f4c0
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Mon May 8 11:52:34 2023 -0600
+
+    Agregando index.js al index.html
+
+commit 2a0230c55a3142e35a3a94510d588e54f9226a33
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Mon May 8 11:50:04 2023 -0600
+
+    Agregando style.css al index.html
+
+commit b657f7f99fb177ad253648958b0a3355541d8a03
+Merge: 79fb236 e2eb929
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Mon May 8 11:26:11 2023 -0600
+
+    Merge branch 'js'
+
+commit e2eb9299f864479d7f1cb37fce1e6e72c14420da
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Mon May 8 11:09:09 2023 -0600
+
+    Creando index.js
+
+commit 79fb236e6843df1c9927337af62237c29bed6ea4
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Mon May 8 11:04:34 2023 -0600
+
+    Creando nuevo.css
+
+commit 4c55782a73f7ab9a0042e37f11a2a01d281fe524
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Mon May 8 10:46:36 2023 -0600
+
+    Ya esta
+
+commit 6b1c2f20efb5152bf203888257d1205db624a7b4
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Mon May 8 10:42:51 2023 -0600
+
+    Creando index.html
+
+commit de95390e6584756e9fe94dd77e86e5859cf98313
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Sun May 7 12:32:41 2023 -0600
+
+    Ignorando archivos .pdf
+
+commit 925fb768cc952713292419a5e67f27cec53bf0d5
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Sun May 7 12:25:00 2023 -0600
+
+    Actualizando las notas
+
+commit 8f9115c9b3bd6637068c9149f3ff72669806135d
+Author: Luis Rodriguez <luisalberto.11182@gmail.com>
+Date:   Sun May 7 11:58:42 2023 -0600
+
+    Creando licencia del repositorio
+
+commit 590076554143ed306d2f6f924fa67e4279a5e636
+Author: Luis Rodriguez <luisalberto.11182@gmail.com>
+Date:   Sun May 7 11:50:52 2023 -0600
+
+    Update README.md
+
+commit bd537d76641e7128a7c5fb1377ba2634b8bff797
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Sun May 7 11:48:38 2023 -0600
+
+    Muuuuuuchos más detalles
+
+commit db02d8aaf7fe75386d150cdf66d70ba9a65d83f2
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Sun May 7 11:46:01 2023 -0600
+
+    Haciendo más pruebas
+
+commit 869f3250b39aa0d3519c6a696b4993ab60c9b105
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Sun May 7 11:37:19 2023 -0600
+
+    Se agregó informacion al README.md
+
+commit 741e7b138d208ac34ec08825e7810e4a2e8d6aef
+Author: Luis Rodriguez <luisalberto.11182@gmial.com>
+Date:   Sun May 7 11:24:18 2023 -0600
+
+    Mi proyecto de notas para el trabajo
