@@ -1,35 +1,124 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aprendiendo Git</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copy paste information</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function copyToClipboard(elementId) {
+      const element = document.getElementById(elementId);
+      if (!element) {
+        console.error(`No se encontró ningún elemento con el id ${elementId}`);
+        return;
+      }
+      const textToCopy = element.value;
+      navigator.clipboard.writeText(textToCopy).then(
+        function () {
+          console.log("Texto copiado correctamente.");
+        },
+        function () {
+          console.error("No se pudo copiar el texto.");
+        }
+      );
+    }
+
+    function copyToClipboardP(elementId) {
+      const element = document.getElementById(elementId);
+      if (!element) {
+        console.error(`No se encontró ningún elemento con el id ${elementId}`);
+        return;
+      }
+      const textToCopy = element.innerText;
+      navigator.clipboard.writeText(textToCopy).then(
+        function () {
+          console.log("Texto copiado correctamente.");
+        },
+        function () {
+          console.error("No se pudo copiar el texto.");
+        }
+      );
+    }
+
+  </script>
+
 </head>
 
 <body>
-  <h1>Aprendiendo Git</h1>
+  <h1>Clean flow Air</h1>
+  <h2>Greeting</h2>
+  <h3>Greeting</h3>
+  <div class="container">
 
-  <p>Mis primeros pasos en el versionado de código y aprendiendo a resolver conflictos desde la rama principal</p>
-  <ul>
-    <p>Mis primeros pasos en el versionado de código</p>
-    <ol>
-      <li>Elemento 1</li>
-      <li>Elemento 2</li>
-      <li>Elemento 3</li>
-      <li>Elemento 4</li>
-      <li>Elemento 5</li>
-    </ol>
-    <ol>
-      <li>Primavera - 21 de marzo </li>
-      <li>Verano - 21 de junio</li>
-      <li>Otoño - 21 de septiembre</li>
-      <li>Invierno - 21 de diciembre</li>
-    </ol>
-  </ul>
-  <script src="index.js"></script>
+    <p id="greeting">Hi there! Thank you for reaching out to us. This is Luis, and I‘ll be helping you today.
+      <br><br>Let me read through your chat with our Virtual Agent so that I can get up to speed, and that way, you
+      won't have to
+      detail it again. Please give me a moment, and I'll be right with you.
+    </p>
+    <button class="copy-button" onclick="copyToClipboardP('greeting')">
+      Copiar texto
+    </button>
+  </div>
+  <div>
+    <a href="cancel.html" rel="noopener noreferrer">Cancel</a>
+  </div>
+  <div>
+    <a href="change.html" rel="noopener noreferrer">Change</a>
+  </div>
+  <div>
+    <a href="https://1a.sellingplatformconnect.amadeus.com/">Amadeus</a>
+    <h4>SEAEX30NT | SAL0044766 | Exp3dia12345$$</h4>
+  </div>
+  <br><br>
+
+  <h3>Hold</h3>
+  <div class="container">
+    <textarea id="hold-1" cols="30"
+      rows="5">Please allow me &lt;&gt; minutes to check the details. Thank you and please keep the chat window open.</textarea>
+    <button class="copy-button" onclick="copyToClipboard('hold-1')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <p id="hold-2">I'm still working on it, and will be back in about 5 minutes.</p>
+    <button class="copy-button" onclick="copyToClipboardP('hold-2')">Copiar texto</button>
+  </div>
+
+  <div class="container">
+    <p id="hold-3">Thanks for staying connected, just a few more minutes while I check on this. Thanks for your
+      patience.</p>
+    <button class="copy-button" onclick="copyToClipboardP('hold-3')">Copiar texto</button>
+  </div>
+
+  <h3>I don't know</h3>
+  <div class="container">
+
+    <p id="idk">That's a good question, let me find out for you.</p>
+    <button class="copy-button" onclick="copyToClipboardP('idk')">Copiar texto</button>
+  </div>
+
+
+  <h3>No response</h3>
+  <div class="container">
+
+    <p id="noresp-1">Are you still there?</p>
+    <button class="copy-button" onclick="copyToClipboardP('noresp-1')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <p id="noresp-2">I haven't heard from you in 2 minutes. Just so you know, our
+      chat will disconnect in 1 minute if you don't respond.</p>
+    <button class="copy-button" onclick="copyToClipboardP('noresp-2')">Copiar texto</button>
+  </div>
+  <div class="container">
+    <p id="noresp-3">I'm sorry, since I'm not receiving a response from you, I am going to close the chat.</p>
+    <button class="copy-button" onclick="copyToClipboardP('noresp-3')">Copiar texto</button>
+  </div>
+
+
+
+
+
+
 </body>
 
 </html>
