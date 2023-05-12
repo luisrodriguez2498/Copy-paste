@@ -1,9 +1,29 @@
+h1 {
+  background: blue;
+  border-radius: 2cm;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ffffff;
+}
+
+h2 {
+  background: red;
+  border-radius: 2cm;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ffffff;
+}
+
+.container-h2 {
+  padding-bottom: 20px;
+}
+
 .container {
   position: relative;
   background-color: #ffffff;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 20px;
 }
 
@@ -92,5 +112,46 @@ input[type="text"] {
 }
 
 body {
-  background-color: cadetblue;
+  background-color: skyblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  grid-template-rows: repeat(2, 1fr); /* 2 filas */
+  gap: 10px; /* Espacio entre elementos */
+}
+
+.grid-item {
+  background-color: blue;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos para el botón flotante */
+.floating-button {
+  position: fixed;
+  top: 20px; /* Ajusta la distancia desde la parte superior */
+  left: 20px; /* Ajusta la distancia desde la izquierda */
+  /* bottom: 20px;
+  right: 20px; */
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+  cursor: pointer;
+  z-index: 9999; /* Valor alto para estar encima de otros objetos */
+}
+
+a {
+  background-color: darkcyan;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
 }

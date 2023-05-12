@@ -42,11 +42,19 @@
       );
     }
 
+    function goBack() {
+      window.location.href = "index.html";
+    }
+
   </script>
 </head>
 
 <body>
-  <a href="main.html">Regresar</a>
+  <div class="floating-button" onclick="goBack()">
+    &larr;
+  </div>
+
+
   <h3>Validation</h3>
   <div class="container">
     <p id="validation">I see you’d like to change, correct?</p>

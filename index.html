@@ -42,14 +42,21 @@
       );
     }
 
+    // Función para regresar a la página anterior con nombre "main.html"
+    function goBack() {
+      window.location.href = "index.html";
+    }
+
   </script>
 
 </head>
 
 <body>
-  <h1>Clean flow Air</h1>
-  <h2>Greeting</h2>
-  <h3>Greeting</h3>
+  <h1>Clean flow</h1>
+  <div class="container-h2">
+    <h2>Greeting</h2>
+  </div>
+
   <div class="container">
 
     <p id="greeting">Hi there! Thank you for reaching out to us. This is Luis, and I‘ll be helping you today.
@@ -61,22 +68,27 @@
       Copiar texto
     </button>
   </div>
-  <div>
-    <a href="cancel.html" rel="noopener noreferrer">Cancel</a>
+
+  <div class="grid-container">
+    <a href="cancel.html" class="grid-item">Cancel a flight</a>
+    <a href="change.html" class="grid-item">Change a flight</a>
+    <a href="#" class="grid-item">Cancel a Hotel</a>
+    <a href="#" class="grid-item">Change a hotel</a>
   </div>
-  <div>
-    <a href="change.html" rel="noopener noreferrer">Change</a>
-  </div>
+  <br><br>
   <div>
     <a href="https://1a.sellingplatformconnect.amadeus.com/">Amadeus</a>
     <h4>SEAEX30NT | SAL0044766 | Exp3dia12345$$</h4>
   </div>
   <br><br>
 
-  <h3>Hold</h3>
+  <div class="container-h2">
+    <h2>Hold</h2>
+  </div>
+
   <div class="container">
     <textarea id="hold-1" cols="30"
-      rows="5">Please allow me &lt;&gt; minutes to check the details. Thank you and please keep the chat window open.</textarea>
+      rows="1">Please allow me &lt;&gt; minutes to check the details. Thank you and please keep the chat window open.</textarea>
     <button class="copy-button" onclick="copyToClipboard('hold-1')">Copiar texto</button>
   </div>
   <div class="container">
@@ -90,7 +102,10 @@
     <button class="copy-button" onclick="copyToClipboardP('hold-3')">Copiar texto</button>
   </div>
 
-  <h3>I don't know</h3>
+  <div class="container-h2">
+    <h2>I don't know</h2>
+  </div>
+
   <div class="container">
 
     <p id="idk">That's a good question, let me find out for you.</p>
@@ -98,7 +113,10 @@
   </div>
 
 
-  <h3>No response</h3>
+  <div class="container-h2">
+    <h2>No response</h2>
+  </div>
+
   <div class="container">
 
     <p id="noresp-1">Are you still there?</p>
@@ -113,12 +131,6 @@
     <p id="noresp-3">I'm sorry, since I'm not receiving a response from you, I am going to close the chat.</p>
     <button class="copy-button" onclick="copyToClipboardP('noresp-3')">Copiar texto</button>
   </div>
-
-
-
-
-
-
 </body>
 
 </html>
