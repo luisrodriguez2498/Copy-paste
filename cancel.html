@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cancel</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-cxh.css" />
   <script>
     function copyToClipboard(elementId) {
       const element = document.getElementById(elementId);
@@ -54,6 +54,8 @@
     &larr;
   </div>
 
+  <div class="container-h2"></div>
+
 
   <h3>Validation</h3>
   <div class="container">
@@ -62,24 +64,12 @@
       Copiar texto
     </button>
   </div>
-  <h3>Verify security</h3>
-  <div class="container">
-    <p id="security">May I have the phone number or email address on your account?</p>
-    <button class="copy-button" onclick="copyToClipboardP('security')">
-      Copiar texto
-    </button>
-  </div>
-  <h4>Failed security verification</h4>
-  <div class="container">
-    <p id="failed">Since we can't verify the account, we're unable to proceed. Please come back once you have the
-      correct information.</p>
-    <button class="copy-button" onclick="copyToClipboardP('failed')">Copiar texto</button>
-  </div>
+
 
   <h3>Mini-recap</h3>
   <div class="container">
     <textarea id="mini-recap" cols="5"
-      rows="5">You would like to cancel your trip to &lt;&gt; on &lt;&gt;, correct? </textarea><button
+      rows="5">Would you like to cancel your trip to &lt;&gt; on &lt;&gt;, correct? </textarea><button
       class="copy-button" onclick="copyToClipboard('mini-recap')">
       Copiar
     </button>
@@ -150,7 +140,7 @@
   <div class="container">
     <h4>Refundable (with pen)</h4>
     <textarea id="refundable-w-penalty" cols="30"
-      rows="10">According to &lt;airline&gt;, your ticket is refundable minus a fee of &lt;amount&gt; per passenger, you'll get a refund of &lt;amount&gt; to your original payment method within &lt;refund timing&gt;. Shall we proceed?</textarea><button
+      rows="10">According to &lt;airline&gt;, your ticket is refundable minus a fee of &lt;amount&gt; per passenger, you'll get a refund of &lt;amount&gt; to your original payment method within &lt;refund timing&gt;. Should I proceed?</textarea><button
       class="copy-button" onclick="copyToClipboard('refundable-w-penalty')">
       Copiar
     </button>
@@ -160,17 +150,91 @@
     <h4>FTC without penalty</h4>
     <textarea name="" id="ftc-wn-penalty" cols="30"
       rows="10">Good news! Your reservation allows us to cancel with an airline credit. You can use this credit &lt;validity&gt; a future flight with &lt;airline&gt; for same passengers and country of origin by &lt;travel date&gt;. Keep in mind there’s no change fee and rice difference will apply. Should I proceed?</textarea><button
-      class="copy-button" onclick="copyToClipboard('ftc-wn-penalty')">
+      class="copy-button-Izquierda-Izquierda" onclick="copyToClipboard('ftc-wn-penalty')">
       Copiar
     </button>
+    <button class="copy-button-Izquierda" onclick="copyToClipboard('S-E-FTC-NP')">
+      Subject
+    </button>
+    <button class="copy-button" onclick="copyToClipboard('E-FTC-NP')">
+      Email
+    </button>
+
+    <details>
+      <summary>Email to customer FTC with no penalty</summary>
+      <textarea id="S-E-FTC-NP" rows="2"
+        cols="30">Your flight cancellation request for your [brand] itinerary [itinerary number]</textarea>
+      <br>
+      <textarea id="E-FTC-NP" rows="25" cols="30">Hello [customer name],
+
+Thanks for contacting [brand].
+        
+We've gone ahead and canceled your reservation. According to [ airline ], your [ticket/tickets] [is/are] non-refundable. The great news is, they're allowing a travel credit for future use for the value of your [ticket/tickets] of [currency] [total amount for all travelers paid], toward a new flight booking. Just know there may be a possible fare difference.
+
+Keep the following in mind when redeeming your travel credit:
+
+✔You must book and complete travel by [validity date]
+✔Airlines have varying restrictions on credit expiration. We recommend you plan to book and complete travel by the credit expiration date to avoid losing your credit.
+✔Airlines give separate credits to each traveler; you won't be able to combine or transfer credits.
+✔You must book on the same airline.
+✔The credits can't be used for additional services, like meals, seat upgrades, and so on.
+✔Your new flight must depart from the same country as was shown on your original ticket.
+✔When you're ready to use your travel credit, just sign in to your [brand] account and go to Coupons and credits.
+✔Select the credit you want to use and follow in the instructions.
+
+Thanks for choosing [brand].
+
+Sincerely,
+
+[agent first name and last name initial]
+[SSO login]
+[brand] Customer Support Team</textarea>
+    </details>
   </div>
   <div class="container">
     <h4>FTC with penalty</h4>
     <textarea name="" id="ftc-w-penalty" cols="30"
-      rows="10">Good news! Good news! Your reservation allows us to cancel with an airline credit. You can use this credit &lt;validity&gt; a future flight with &lt;airline&gt; with same passengers and country of origin by &lt;travel date&gt;. When you're ready to use your flight credit, &lt;airline&gt; will charge a &lt;amount&gt; change fee and any fare difference per ticket . Should I cancel?</textarea><button
-      class="copy-button" onclick="copyToClipboard('ftc-w-penalty')">
+      rows="10">Good news! Your reservation allows us to cancel with an airline credit. You can use this credit &lt;validity&gt; a future flight with &lt;airline&gt; with same passengers and country of origin by &lt;travel date&gt;. When you're ready to use your flight credit, &lt;airline&gt; will charge a &lt;amount&gt; change fee and any fare difference per ticket . Should I cancel?</textarea><button
+      class="copy-button-Izquierda-Izquierda" onclick="copyToClipboard('ftc-w-penalty')">
       Copiar
     </button>
+    <button class="copy-button-Izquierda" onclick="copyToClipboard('S-E-FTC-P')">
+      Subject
+    </button>
+    <button class="copy-button" onclick="copyToClipboard('E-FTC-P')">
+      Email
+    </button>
+
+    <details>
+      <summary>Email to customer FTC with penalty</summary>
+      <textarea id="S-E-FTC-P" rows="2"
+        cols="30">Your flight cancellation request for your [brand] itinerary [itinerary number]</textarea>
+      <br>
+      <textarea id="E-FTC-P" rows="25" cols="30">Hello [customer name],
+Thanks for contacting [brand].
+
+I've gone ahead and canceled your reservation. According to [airline], your [ticket/tickets] [is/are] non-refundable. The great news is, they're allowing a travel credit for future use in the amount of [travel credit amount]. This is made up of the amount you paid [currency] [amount] minus the airline cancellation fee of [currency] [amount]. You can use this toward a new flight booking. Just know there may be a possible fare difference. 
+
+Keep the following in mind when redeeming your travel credit:
+
+✔You must book and complete travel by [validity date].
+✔Airlines have varying restrictions on credit expiration. We recommend you plan to book and complete travel by the
+credit expiration date to avoid losing your credit.
+✔Airlines give separate credits to each traveler; you won't be able to combine or transfer credits.
+✔You must book on the same airline.
+✔The credits can't be used for additional services, like meals, seat upgrades, and so on.
+✔Your new flight must depart from the same country as was shown on your original ticket.
+✔When you're ready to use your travel credit, just sign in to your [brand] account, select your name, and go
+✔to Coupons and credits. Select the credit you want to use and follow in the instructions.
+
+Thanks for choosing [brand].
+
+Sincerely,
+
+[agent first name and last name initial]
+[SSO login]
+[brand] Customer Support Team</textarea>
+    </details>
   </div>
 
   <div class="container">

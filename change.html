@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>change</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-cxh.css" />
   <script>
     function copyToClipboard(elementId) {
       const element = document.getElementById(elementId);
@@ -62,24 +62,12 @@
       Copiar texto
     </button>
   </div>
-  <h3>Verify security</h3>
-  <div class="container">
-    <p id="security">May I have the phone number or email address on your account?</p>
-    <button class="copy-button" onclick="copyToClipboardP('security')">
-      Copiar texto
-    </button>
-  </div>
-  <h4>Failed security verification</h4>
-  <div class="container">
-    <p id="failed">Since we can't verify the account, we're unable to proceed. Please come back once you have the
-      correct information.</p>
-    <button class="copy-button" onclick="copyToClipboardP('failed')">Copiar texto</button>
-  </div>
+
 
   <h3>Mini-recap</h3>
   <div class="container">
     <textarea id="mini-recap" cols="5"
-      rows="5">This is for your trip to &lt;&gt; on &lt;&gt;, correct?</textarea><button class="copy-button"
+      rows="5">Is this for your trip to &lt;&gt; on &lt;&gt;, correct?</textarea><button class="copy-button"
       onclick="copyToClipboard('mini-recap')">
       Copiar
     </button>
@@ -121,13 +109,13 @@
   <div class="container">
     <h4>No pen/No fare diff</h4>
     <textarea id="nopen-nofare" cols="30"
-      rows="5">For today’s exchange, there is no change fee or fare difference. Shall I finalize the changes?</textarea>
+      rows="5">For today’s exchange, there is no change fee or fare difference. Should I complete the changes?</textarea>
     <button class="copy-button" onclick="copyToClipboard('nopen-nofare')">Copiar texto</button>
   </div>
   <div class="container">
     <h4>No pen, with fare diff</h4>
     <textarea id="nopen-withfare" cols="30"
-      rows="5">There is not change fee, so you'll only cover &lt;amount&gt; fare difference per passenger. You'll be charged a total of &lt;total exchange cost&gt; today. Should l finalize the changes?</textarea>
+      rows="5">There is not change fee, so you'll only cover &lt;amount&gt; fare difference per passenger. You'll be charged a total of &lt;total exchange cost&gt; today. Should l complete the changes?</textarea>
     <button class="copy-button" onclick="copyToClipboard('nopen-withfare')">Copiar texto</button>
   </div>
   <div class="container">
@@ -139,7 +127,7 @@
   <div class="container">
     <h4>With pen & fare diff</h4>
     <textarea id="withpen-fare" cols="30"
-      rows="5">There’s a penalty fee of &lt;amount&gt; per passenger and &lt;amount&gt; fare difference per passenger, so you'll be charged a total of &lt;total exchange cost&gt; today. Shall I proceed?</textarea>
+      rows="5">There’s a penalty fee of &lt;amount&gt; per passenger and &lt;amount&gt; fare difference per passenger, so you'll be charged a total of &lt;total exchange cost&gt; today. Should I proceed?</textarea>
     <button class="copy-button" onclick="copyToClipboard('withpen-fare')">Copiar texto</button>
   </div>
   <div class="container">
@@ -151,7 +139,7 @@
   <div class="container">
     <h4>With pen & fare diff + residual value - MCO</h4>
     <textarea id="pen-fare-res-mco" cols="30"
-      rows="5">There’s a penalty fee of &lt;amount&gt; and &lt;amount&gt; fare difference per passenger, so you'll be charged a total of &lt;total exchange cost&gt; today. You'll also get &lt;amount&gt; residual air credit per passenger. You need to &lt;validity&gt; a new flight by &lt;date&gt;. Shall I finalize the changes?</textarea>
+      rows="5">There’s a penalty fee of &lt;amount&gt; and &lt;amount&gt; fare difference per passenger, so you'll be charged a total of &lt;total exchange cost&gt; today. You'll also get &lt;amount&gt; residual air credit per passenger. You need to &lt;validity&gt; a new flight by &lt;date&gt;. Should I finalize the changes?</textarea>
     <button class="copy-button" onclick="copyToClipboard('pen-fare-res-mco')">Copiar texto</button>
   </div>
   <div class="container">
@@ -163,7 +151,7 @@
   <div class="container">
     <h4>With pen & fare diff + residual value - Forteited</h4>
     <textarea id="pen-fare-res-for" cols="30"
-      rows="5">There’s a penalty fee of <amount> and <amount> fare difference per passenger, so you'll be charged a total of <total exchange cost> today. Also, there’s a remaining amount of <amount>, this is consider a lost value since there’s no credit or refund for it. Shall I finalize the changes?</textarea>
+      rows="5">There’s a penalty fee of <amount> and <amount> fare difference per passenger, so you'll be charged a total of <total exchange cost> today. Also, there’s a remaining amount of <amount>, this is consider a lost value since there’s no credit or refund for it. Should I finalize the changes?</textarea>
     <button class="copy-button" onclick="copyToClipboard('pen-fare-res-for')">Copiar texto</button>
   </div>
   <h3>Process</h3>
@@ -236,7 +224,7 @@
   <h3>Closing</h3>
   <div class="container">
     <p id="closing-1">
-      Is there something else I can do for you?
+      Is there anything else that I can do for you?
     </p><button class="copy-button" onclick="copyToClipboardP('closing-1')">Copiar texto</button>
   </div>
   <div class="container">
