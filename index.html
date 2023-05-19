@@ -78,9 +78,96 @@
   <br><br>
   <div>
     <a href="https://1a.sellingplatformconnect.amadeus.com/">Amadeus</a>
-    <h4>SEAEX30NT | SAL0044766 | Exp3dia12345$$</h4>
+    <details>
+      <summary>Credentials</summary>
+      <ul>
+        <li>Username: SAL0044766</li>
+        <li>Office ID: SEAEX30NT</li>
+        <li>Password: Exp3dia12345$$</li>
+      </ul>
+    </details>
   </div>
   <br><br>
+
+
+  <div class="container-h2">
+    <h2>Authenticate</h2>
+  </div>
+
+  <h3>Verify security</h3>
+  <div class="container">
+    <p id="security">May I have the itinerary and email address attached to it, please?</p>
+    <button class="copy-button" onclick="copyToClipboardP('security')">
+      Copiar texto
+    </button>
+  </div>
+  <h4>Failed security verification</h4>
+  <div class="container">
+    <p id="failed">Since we can't verify the account, we're unable to proceed. The owner could contact us back using the
+      correct information to get assistance from us.</p>
+    <button class="copy-button" onclick="copyToClipboardP('failed')">Copiar texto</button>
+  </div>
+
+  <div class="container-h2">
+    <h2>Discover</h2>
+  </div>
+  <div class="container">
+    <p id="discover-1">How could I help you today with?</p>
+    <button class="copy-button" onclick="copyToClipboardP('discover-1')">Copiar texto</button>
+  </div>
+
+  <div class="container">
+    <p id="discover-2">
+      How may I assist you today with?
+    </p>
+    <button class="copy-button" onclick="copyToClipboardP('discover-2')">Copiar texto</button>
+  </div>
+
+  <div class="container-h2">
+    <h2>Empathy</h2>
+  </div>
+
+  <div class="container">
+    <p id="empathy-1">I can imagine how upsetting this must be. Let me see what I can do to help you.</p>
+    <button class="copy-button" onclick="copyToClipboardP('empathy-1')">Copiar texto</button>
+  </div>
+
+
+  <div class="container">
+    <p id="empathy-2">I'm sorry you're facing this situation. What I'll do right now is see what options we have.</p>
+    <button class="copy-button" onclick="copyToClipboardP('empathy-2')">Copiar texto</button>
+  </div>
+
+
+  <div class="container">
+    <p id="empathy-3">That sounds like a difficult situation, I'm so sorry. Let me see what options we have.</p>
+    <button class="copy-button" onclick="copyToClipboardP('empathy-3')">Copiar texto</button>
+  </div>
+
+  <div class="container">
+    <p id="empathy-4">My deepest condolences.</p>
+    <button class="copy-button" onclick="copyToClipboardP('empathy-4')">Copiar texto</button>
+  </div>
+
+  <div class="container-h2">
+    <h2>Assurance</h2>
+  </div>
+
+  <div class="container">
+    <p id="assurance-1">Not a problem, I will do my best to assist you now.</p>
+    <button class="copy-button" onclick="copyToClipboardP('assurance-1')">Copiar texto</button>
+  </div>
+
+  <div class="container">
+    <p id="assurance-2">Sure! Go ahead.</p>
+    <button class="copy-button" onclick="copyToClipboardP('assurance-2')">Copiar texto</button>
+  </div>
+
+  <div class="container">
+    <p id="assurance-3">Sure, let me sort this out for you.</p>
+    <button class="copy-button" onclick="copyToClipboardP('assurance-3')">Copiar texto</button>
+  </div>
+
 
   <div class="container-h2">
     <h2>Hold</h2>
@@ -88,7 +175,7 @@
 
   <div class="container">
     <textarea id="hold-1" cols="30"
-      rows="1">Please allow me &lt;&gt; minutes to check the details. Thank you and please keep the chat window open.</textarea>
+      rows="2">Please allow me &lt;&gt; minutes to check the details. Thank you and please keep the chat window open.</textarea>
     <button class="copy-button" onclick="copyToClipboard('hold-1')">Copiar texto</button>
   </div>
   <div class="container">
@@ -103,13 +190,31 @@
   </div>
 
   <div class="container-h2">
+    <h2>Latency or delay</h2>
+  </div>
+
+  <div class="container">
+    <p id="latency-1">I'm sorry for the delay, your account details are still loading. Thank you for your patience.</p>
+    <button class="copy-button" onclick="copyToClipboardP('latency-1')">Copiar texto</button>
+  </div>
+
+  <div class="container">
+    <p id="latency-2">Sorry about the wait, we've been busier than usual.</p>
+    <button class="copy-button" onclick="copyToClipboardP('latency-2')">Copiar texto</button>
+  </div>
+
+  <div class="container-h2">
     <h2>I don't know</h2>
   </div>
 
   <div class="container">
-
     <p id="idk">That's a good question, let me find out for you.</p>
     <button class="copy-button" onclick="copyToClipboardP('idk')">Copiar texto</button>
+  </div>
+
+  <div class="container">
+    <p id="idk-2">I'm glad you asked that. Give me a moment to research and find the answer for you.</p>
+    <button class="copy-button" onclick="copyToClipboardP('idk-2')">Copiar texto</button>
   </div>
 
 
@@ -131,6 +236,25 @@
     <p id="noresp-3">I'm sorry, since I'm not receiving a response from you, I am going to close the chat.</p>
     <button class="copy-button" onclick="copyToClipboardP('noresp-3')">Copiar texto</button>
   </div>
+
+  <div class="container-h2">
+    <h2> Closing </h2>
+  </div>
+
+  <div class="container">
+    <p id="closing-1">
+      Is there anything else that I could assist you with today?
+    </p>
+    <button class="copy-button" onclick="copyToClipboardP('closing-1')">Copiar texto</button>
+  </div>
+
+  <div class="container">
+    <p id="closing-2">
+      Do you have any other question?
+    </p>
+    <button class="copy-button" onclick="copyToClipboardP('closing-2')">Copiar texto</button>
+  </div>
+
 </body>
 
 </html>
